@@ -4,15 +4,12 @@ name: mjh
 type: Service
 
 build:
-    # 关键：我们告诉 Choreo，这是一个 Docker 构建任务
     buildPreset: Docker
-    # 关键：我们告诉 Choreo，Dockerfile 的位置就在根目录
-    dockerfilePath: ./Dockerfile
+    # 注意：这里我们只写文件名，这是最标准的写法
+    dockerfilePath: Dockerfile
 
 endpoints:
-    # 关键：我们假设那个成品镜像内部使用的端口是 8080
-    # 这是最常见的端口，如果部署后无法访问，我们可能需要将其改为 80 或 3000
-    - name: xray-api
+    - name: mjh-api
       port: 8080
       type: REST
       networkVisibility: Public
