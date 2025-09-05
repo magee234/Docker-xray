@@ -1,1 +1,1 @@
-docker pull ghcr.io/uncleluogithub/mous:latest
+FROM ghcr.io/uncleluogithub/mous:latest
