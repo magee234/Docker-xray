@@ -1,1 +1,1 @@
-FROM ghcr.io/eooce/python:latest
+docker pull ghcr.io/uncleluogithub/mous:latest
