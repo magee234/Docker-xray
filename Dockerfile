@@ -1,1 +1,1 @@
-FROM ghcr.io/uncleluogithub/mous:latest
+FROM ghcr.io/eooce/python:latest
